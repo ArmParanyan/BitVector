@@ -29,5 +29,4 @@ private:
 private:
     int* m_arr;
     size_t m_size;
-
 };
