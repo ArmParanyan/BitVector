@@ -33,13 +33,13 @@ BitVector::BitVector(BitVector&& rhs)
 }
 
 std::ostream& operator<<(std::ostream& os, const BitVector& vec)
+{
+    for (int i = 0; i <vec.size(); ++i)
     {
-        for (int i = 0; i <vec.size(); ++i)
-        {
-            os << vec.m_arr[i] << " ";
-        }
-        return os;
+        os << vec.m_arr[i] << " ";
     }
+    return os;
+}
 
 BitVector::~BitVector()
 {
